@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 PostList.propTypes = {
-    posts: PropTypes.array
+    posts: PropTypes.array // rsfp    
 
 };
 PostList.defaultProps = {
@@ -14,7 +14,7 @@ function PostList(props) {
         <ui className='post-list'>
             {posts.map(post => (
                 <li key={post.id}>
-                    {post.name}
+                    {post.title}
                 </li>
             ))}
         </ui>
